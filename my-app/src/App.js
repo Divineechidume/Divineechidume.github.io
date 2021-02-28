@@ -12,23 +12,22 @@ const divStyle = {
   backgroundAttachment: "fixed",
 };
 
-const rightPic = {
-  height: "100%",
-  backgroundImage: `url(${DivineeCover})`,
-  backgroundPosition: "right",
-};
-
 class App extends Component {
   render() {
     return (
       <div style={divStyle}>
-        <img
-          src={DivineeCover}
-          alt="DivineeCover"
-          height="100%"
-          width="auto"
-          style={{ float: "right" }}
-        />
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col">
+              <nav class="navbar navbar-expand-lg navbar-transparent">
+                <a class="navbar-brand" href="#">
+                  Bootstrap
+                </a>
+              </nav>
+            </div>
+            <div class="col-sm-4 img-6" style={{ paddingRight: 0 }}></div>
+          </div>
+        </div>
       </div>
     );
   }
