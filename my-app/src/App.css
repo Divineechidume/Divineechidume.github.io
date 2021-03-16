@@ -25,13 +25,18 @@
   }
 }
 
-.nav-wrapper {
-  display: relative;
-  margin-bottom: 0;
+.background {
+  background-image: url(./images/Background.svg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
-
-.img-6 {
+.divineeCover {
   background: url(./images/DivineeCover.jpg) no-repeat;
   background-size: cover;
   height: 100vh;
+  width: auto;
+  position: fixed;
 }
