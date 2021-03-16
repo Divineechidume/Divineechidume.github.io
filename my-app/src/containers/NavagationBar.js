@@ -24,13 +24,13 @@ class NavagationBar extends Component {
               Home <span class="sr-only">(current)</span>
             </a>
             <a class="nav-item nav-link" href="#">
-              Features
+              About Me
             </a>
             <a class="nav-item nav-link" href="#">
-              Pricing
+              Personal Projects
             </a>
             <a class="nav-item nav-link disabled" href="#">
-              Disabled
+              Resume
             </a>
           </div>
         </div>
