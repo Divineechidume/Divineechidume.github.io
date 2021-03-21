@@ -33,27 +33,3 @@
   background-repeat: repeat-y;
   background-attachment: fixed;
 }
-.divineeCover {
-  background: url(./images/DivineeCover.jpg) no-repeat;
-  background-size: cover;
-  height: 100vh;
-  width: auto;
-}
-
-.container {
-  flex: 1;
-  padding-top: 25%;
-  align-content: center;
-  vertical-align: middle;
-  text-align: center;
-}
-
-.mainText {
-  font-family: "Courier New";
-  font-size: 10vh;
-}
-
-.subHeading {
-  font-family: monospace;
-  font-size: 2.5vh;
-}
