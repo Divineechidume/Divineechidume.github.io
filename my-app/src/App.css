@@ -30,7 +30,7 @@
   height: 100vh;
   background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
   background-attachment: fixed;
 }
 .divineeCover {
@@ -50,10 +50,10 @@
 
 .mainText {
   font-family: "Courier New";
-  font-size: 600%;
+  font-size: 10vh;
 }
 
 .subHeading {
   font-family: monospace;
-  font-size: 200%;
+  font-size: 2.5vh;
 }
