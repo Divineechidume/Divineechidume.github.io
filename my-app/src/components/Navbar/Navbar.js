@@ -1,26 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Navbar.css";
 import { MenuItems } from "./MenuItems";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
-class Navbar extends Component {
-  render() {
-    return (
-      <nav className="Navbaritem">
-        <h2 className="navbar-logo subHeading">Divinee Chidume</h2>
-        <ul className="nav-menu">
+const Navbar = () => {
+  const [showMenu, setShowMenu] = React.useState(false);
+
+  const toggleMenu = () => {
+    setShowMenu(!showMenu);
+  };
+
+  return (
+    <nav className="navbar">
+      <div className="navbar-container">
+        <a className="navbar-logo" href="#">
+          Divinee Chidume
+        </a>
+        <div className="menu-icon" onClick={toggleMenu}>
+          <FontAwesomeIcon icon={faBars} />
+        </div>
+        <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
               <li key={index}>
-                <a classname={item.cName} href={item.url}>
+                <a className={item.cName} href={item.url}>
                   {item.title}
                 </a>
               </li>
             );
           })}
         </ul>
-      </nav>
-    );
-  }
-}
+      </div>
+    </nav>
+  );
+};
 
 export default Navbar;

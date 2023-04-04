@@ -1,33 +1,30 @@
-import React, { Component } from "react";
+import React from "react";
 import "./HomePage.css";
 import Navbar from "../components/Navbar/Navbar.js";
+import DivineeCover from "../images/DivineeFace.jpeg"
 
-class HomePage extends Component {
-  render() {
-    return (
-      <div class="homeWrapper">
-        <div class="background">
-          <div class="container-fluid">
-            <div class="row">
-              <div class="col">
-                <Navbar />
-                <div div class="container">
-                  <div class="mainText">DIVINEE CHIDUME</div>
-                  <div class="subHeading">
-                    SOFTWARE ENGINEER - ENTREPRENUER - LIFE LEARNER
-                  </div>
-                </div>
+const HomePage = () => {
+  return (
+    <div className="homeWrapper">
+      <Navbar />
+      <div className="background d-flex align-items-center justify-content-center">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-6">
+              <div className="image-container">
+                <img src={DivineeCover} alt="Divinee Cover"/>
               </div>
-              <div
-                class="col-xl divineeCover"
-                style={{ paddingRight: 0 }}
-              ></div>
+            </div>
+            <div className="col-md-6 d-flex flex-column justify-content-center">
+              <h1 className="mainText display-1 fw-bold">DIVINEE CHIDUME</h1>
+              <p className="subHeading fw-light">SOFTWARE ENGINEER - ENTREPRENUER - LIFE LEARNER</p>
+              <button className="btn btn-primary btn-lg">View My Portfolio</button>
             </div>
           </div>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default HomePage;
