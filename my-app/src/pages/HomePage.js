@@ -1,24 +1,50 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./HomePage.css";
 import Navbar from "../components/Navbar/Navbar.js";
-import DivineeCover from "../images/DivineeFace.jpeg"
+import DivineeCover from "../images/DivineeFace.jpeg";
 
 const HomePage = () => {
+  useEffect(() => {
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = "unset";
+    };
+  }, []);
+
   return (
     <div className="homeWrapper">
       <Navbar />
       <div className="background d-flex align-items-center justify-content-center">
         <div className="container">
-          <div className="row">
+          <div
+            className="row"
+            style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
+          >
             <div className="col-md-6">
               <div className="image-container">
-                <img src={DivineeCover} alt="Divinee Cover"/>
+                <img src={DivineeCover} alt="Divinee Cover" />
               </div>
             </div>
             <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h1 className="mainText display-1 fw-bold">DIVINEE CHIDUME</h1>
-              <p className="subHeading fw-light">SOFTWARE ENGINEER - ENTREPRENUER - LIFE LEARNER</p>
-              <button className="btn btn-primary btn-lg">View My Portfolio</button>
+              <h2 className="mainText display-4 fw-bold">
+                HI I'M {"<DIV>"}
+              </h2>
+              <p className="subHeading fw-light">
+                Hi Hi! As one of the less than 2% of black female
+                software machine learning engineers, I'm excited to share my
+                passion for data and artificial intelligence with you. To me,
+                data is a fascinating subject that goes against the law of
+                supply and demand - the more high-quality data you have, the
+                more value you can gain and the greater impact you can make.
+                In today's world, where artificial intelligence is becoming
+                increasingly prevalent, I believe that understanding and
+                utilizing data is more important than ever. Join me as I
+                explore the possibilities of this exciting field and share my
+                insights with you.
+              </p>
+              <button className="btn btn-primary btn-lg">
+                View My Portfolio
+              </button>
             </div>
           </div>
         </div>
