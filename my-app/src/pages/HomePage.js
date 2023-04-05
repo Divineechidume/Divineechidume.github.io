@@ -16,17 +16,14 @@ const HomePage = () => {
       <Navbar />
       <div className="background d-flex align-items-center justify-content-center">
         <div className="container">
-          <div
-            className="row"
-            style={{ backgroundColor: "rgba(255, 255, 255, 0.8)" }}
-          >
+        <div className="row">
             <div className="col-md-6">
               <div className="image-container">
                 <img src={DivineeCover} alt="Divinee Cover" />
               </div>
             </div>
             <div className="col-md-6 d-flex flex-column justify-content-center">
-              <h2 className="mainText display-4 fw-bold">
+              <h2 className="mainText display-4 fw-bold text-center">
                 HI I'M {"<DIV>"}
               </h2>
               <p className="subHeading fw-light">
