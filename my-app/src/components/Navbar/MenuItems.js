@@ -2,12 +2,12 @@
 export const MenuItems = [
   {
     title: "Home",
-    url: "#",
+    url: "/",
     cName: "nav-links",
   },
   {
     title: "About Me",
-    url: "#",
+    url: "/AboutPage",
     cName: "nav-links",
   },
   {

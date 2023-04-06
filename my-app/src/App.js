@@ -2,16 +2,21 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
 import HomePage from "./pages/HomePage.js";
+import AboutPage from "./pages/AboutPage.js";
+
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <switch>
+          <Switch>
             <Route exact path="/">
               <HomePage />
             </Route>
-          </switch>
+            <Route exact path="/AboutPage">
+              <AboutPage />
+            </Route>
+          </Switch>
         </div>
       </Router>
     );
@@ -19,3 +24,4 @@ class App extends Component {
 }
 
 export default App;
+
