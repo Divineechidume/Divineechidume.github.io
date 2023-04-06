@@ -1,8 +1,10 @@
 .background {
-  background-image: url(./images/Background.svg);
-  height: max(600px, 100vh);
-  background-position: center;
+  background-image: url(images/Background.svg);
   background-size: cover;
-  background-repeat: repeat-y;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

@@ -1,35 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
 import { MenuItems } from "./MenuItems";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
-  const [showMenu, setShowMenu] = React.useState(false);
+  const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {
-    setShowMenu(!showMenu);
+    setShowMenu((prevState) => !prevState);
   };
 
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a className="navbar-logo" href="#">
+        <Link to="/" className="navbar-logo">
           Divinee Chidume
-        </a>
+        </Link>
         <div className="menu-icon" onClick={toggleMenu}>
           <FontAwesomeIcon icon={faBars} />
         </div>
         <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
-          {MenuItems.map((item, index) => {
-            return (
-              <li key={index}>
-                <a className={item.cName} href={item.url}>
-                  {item.title}
-                </a>
-              </li>
-            );
-          })}
+          {MenuItems.map((item, index) => (
+            <li key={index}>
+              <Link to={item.url} className={item.cName}>
+                {item.title}
+              </Link>
+            </li>
+          ))}
         </ul>
       </div>
     </nav>

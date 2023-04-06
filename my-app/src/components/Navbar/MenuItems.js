@@ -1,28 +1,27 @@
-//All of menu items for the Navbar will be contained in here
 export const MenuItems = [
   {
     title: "Home",
-    url: "/",
+    path: "/",
     cName: "nav-links",
   },
   {
     title: "About Me",
-    url: "/AboutPage",
+    url: "/about",
     cName: "nav-links",
   },
   {
-    title: "Personal Projects",
-    url: "#",
+    title: "Projects",
+    path: "/projects",
     cName: "nav-links",
   },
   {
     title: "Blog",
-    url: "#",
+    path: "/blog",
     cName: "nav-links",
   },
   {
     title: "Resume",
-    url: "#",
-    cName: "nav-links-mobil",
+    path: "/resume",
+    cName: "nav-links",
   },
 ];

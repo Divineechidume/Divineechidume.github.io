@@ -26,8 +26,7 @@ const sections = [
 
 const AboutPage = () => {
   return (
-    <div>
-      <Navbar />
+    <div className="background">
       <div className="container my-5">
         <h1>About Me</h1>
         <p>

@@ -13,10 +13,9 @@ const HomePage = () => {
 
   return (
     <div className="homeWrapper">
-      <Navbar />
       <div className="background d-flex align-items-center justify-content-center">
         <div className="container">
-        <div className="row">
+          <div className="row">
             <div className="col-md-6">
               <div className="image-container">
                 <img src={DivineeCover} alt="Divinee Cover" />

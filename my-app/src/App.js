@@ -1,27 +1,20 @@
-import React, { Component } from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import "./App.css";
+import { Routes ,Route } from 'react-router-dom'; 
 import HomePage from "./pages/HomePage.js";
 import AboutPage from "./pages/AboutPage.js";
+import Navbar from "./components/Navbar/Navbar.js";
 
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <div>
-          <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route exact path="/AboutPage">
-              <AboutPage />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
-    );
-  }
+import "./App.css";
+
+function App() {
+  return (
+    <>
+    <Navbar />
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutPage />} />
+      </Routes>
+    </>
+  );
 }
 
 export default App;
-
