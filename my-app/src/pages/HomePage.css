@@ -99,7 +99,9 @@ body {
   background-color: #544dd8;
   cursor: pointer;
 }
-
+.content {
+  padding: 3rem;
+}
 @media (max-width: 1000px) {
   .row {
     flex-direction: column;
