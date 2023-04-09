@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "Home",
-    path: "/",
+    url: "/",
     cName: "nav-links",
   },
   {
@@ -11,17 +11,17 @@ export const MenuItems = [
   },
   {
     title: "Projects",
-    path: "/projects",
+    url: "/projects",
     cName: "nav-links",
   },
   {
     title: "Blog",
-    path: "/blog",
+    url: "/blog",
     cName: "nav-links",
   },
   {
     title: "Resume",
-    path: "/resume",
+    url: "/resume",
     cName: "nav-links",
   },
 ];
