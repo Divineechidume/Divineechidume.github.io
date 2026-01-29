@@ -1,0 +1,18 @@
+title: "Divinee Chidume"
+description: "Software engineer working on enterprise security, trust, and human-centered technology"
+baseurl: ""
+url: "https://divineechidume.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - my-app
+  - package.json
+  - package-lock.json
+  - yarn.lock
+  - README.md
